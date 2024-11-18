@@ -557,6 +557,7 @@ def readnumlist(f):
 
 parser = argparse.ArgumentParser(description="Multilingual Biber-like tagger")
 parser.add_argument('-1', '--embeddings', type=str, help='embeddings, not implemented yet')
+parser.add_argument('-f', '--format', type=str, default='ol', help='either ol (default) or json output by conll2json.py')
 parser.add_argument('-l', '--language', type=str, default='en', help='language id for getting the annotation files')
 parser.add_argument('-s', '--suppressheader', action='store_true', help='suppresses the default feature header')
 parser.add_argument('-v', '--verbosity', type=int, default=1)
